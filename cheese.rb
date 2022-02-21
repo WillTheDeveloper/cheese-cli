@@ -6,6 +6,10 @@ require 'optparse'
 
 OptionParser.new do |opts|
 
+  opts.on('-w', '--website', 'Get the link to the website') do
+    @options[:website] = 'https://cheese-official.github.io/cheese/'
+  end
+
   opts.on('-rl', '--red-leicester', 'Find out about the cheese') do
     @options[:red_leicester] = 'Red Leicester is an English cheese, made in a similar manner to Cheddar cheese, although it is crumbly in texture, and typically sold at 6 to 12 months of age. The rind is reddish-orange, with a powdery mould on it.'
   end
